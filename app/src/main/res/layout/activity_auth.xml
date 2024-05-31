@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimage"
+    android:alpha="0.75"
+    android:padding="15pt"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reg_btn"
+        android:layout_above="@+id/btn_login"
+        android:backgroundTint="@color/btn_color"
+        />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_btn"
+        android:layout_marginTop="10pt"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30pt"
+        android:backgroundTint="@color/btn_color"
+        />
+
+</RelativeLayout>

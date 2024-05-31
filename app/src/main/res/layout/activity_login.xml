@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimage"
+    android:alpha="0.75"
+    android:padding="30dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_btn"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="15pt"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_text"
+        android:layout_marginTop="30pt"
+        android:padding="5pt"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/rounded_edittext"
+        />
+
+    <EditText
+        android:id="@+id/login_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_email"
+        android:layout_marginTop="10pt"
+        android:hint="@string/password"
+        android:padding="5pt"
+        android:inputType="textPassword"
+        android:background="@drawable/rounded_edittext"
+        />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20pt"
+        android:backgroundTint="@color/btn_color"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_pwd"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/text_to_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to_reg_txt"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="15pt"
+            />
+
+        <TextView
+            android:id="@+id/login_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/click_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="2pt"
+            android:textStyle="bold"
+            android:layout_marginTop="15pt"
+            android:textColor="@color/link_color"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
